@@ -9,4 +9,4 @@ set_target_properties(${lib} PROPERTIES LINKER_LANGUAGE C)
 
 target_link_libraries(${lib} PUBLIC zephyr_interface)
 target_include_directories(${lib} PUBLIC ./)
-target_link_libraries(app PRIVATE ${lib})
+
