@@ -1,6 +1,15 @@
 #ifndef __xdts_h__
 #define __xdts_h__
 
+#include <zephyr/kernel.h>
+#include <zephyr/drivers/pwm.h>
+
+typedef struct device device_t;
+typedef struct k_mutex k_mutex_t;
+typedef struct k_timer k_timer_t;
+typedef struct k_event k_event_t;
+typedef struct pwm_dt_spec pwm_t;
+
 #define L(_node_label) DT_NODELABEL(_node_label)
 #define DEFINE_DEVICE(_node_label) const struct device *_node_label = DEVICE_DT_GET(L(_node_label))
 
