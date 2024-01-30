@@ -8,6 +8,7 @@ typedef struct device device_t;
 typedef struct k_mutex k_mutex_t;
 typedef struct k_timer k_timer_t;
 typedef struct k_event k_event_t;
+typedef struct k_pipe k_pipe_t;
 typedef struct pwm_dt_spec pwm_t;
 
 #define L(_node_label) DT_NODELABEL(_node_label)
