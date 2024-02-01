@@ -18,7 +18,7 @@ typedef struct pwm_dt_spec pwm_t;
 #define DEFINE_TTY_DT(_node_label) const struct device *_node_label = TTY_DEVICE(_node_label)
 #define DEFINE_TTY_DT_EXTERN(_node_label) extern const struct device *_node_label
 
-#define TTY_DT_SPEC(_node_label)                    \
+#define TTY_DT_SPEC(_node_label)                        \
     {                                                   \
         .baudrate = DT_PROP(L(_node_label), baud_rate), \
         .parity = UART_CFG_PARITY_NONE,                 \
