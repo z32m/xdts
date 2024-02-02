@@ -5,6 +5,8 @@
 #include <zephyr/drivers/pwm.h>
 
 typedef struct device device_t;
+typedef struct gpio_dt_spec gpio_dt_spec_t;
+typedef struct adc_dt_spec adc_dt_spec_t;
 typedef struct k_mutex k_mutex_t;
 typedef struct k_timer k_timer_t;
 typedef struct k_event k_event_t;
