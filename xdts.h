@@ -4,15 +4,6 @@
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/pwm.h>
 
-typedef struct device device_t;
-typedef struct gpio_dt_spec gpio_dt_spec_t;
-typedef struct adc_dt_spec adc_dt_spec_t;
-typedef struct k_mutex k_mutex_t;
-typedef struct k_timer k_timer_t;
-typedef struct k_event k_event_t;
-typedef struct k_pipe k_pipe_t;
-typedef struct pwm_dt_spec pwm_t;
-
 #define L(_node_label) DT_NODELABEL(_node_label)
 #define DEFINE_DEVICE(_node_label) const struct device *_node_label = DEVICE_DT_GET(L(_node_label))
 
